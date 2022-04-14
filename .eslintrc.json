@@ -5,7 +5,12 @@
   },
   "rules": {
     "strict-boolean-expressions": "off",
+    "@typescript-eslint/strict-boolean-expressions": ["off"],
     "space-before-function-paren": "off",
-    "@typescript-eslint/space-before-function-paren": ["off"]
+    "@typescript-eslint/space-before-function-paren": ["off"],
+    "keyword-spacing": "off",
+    "@typescript-eslint/keyword-spacing": ["off"],
+    "space-before-blocks": "off",
+    "@typescript-eslint/space-before-blocks": ["off"]
   }
 }
