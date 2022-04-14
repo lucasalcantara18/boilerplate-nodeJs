@@ -4,6 +4,8 @@
     "project": "./tsconfig.json"
   },
   "rules": {
+    "curly": "off",
+    "@typescript-eslint/curly": ["off"],
     "strict-boolean-expressions": "off",
     "@typescript-eslint/strict-boolean-expressions": ["off"],
     "space-before-function-paren": "off",
