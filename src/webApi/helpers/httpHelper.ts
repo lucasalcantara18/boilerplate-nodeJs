@@ -1,4 +1,5 @@
-import { HttpResponse } from '../../domain/interfaces/http/iHttp'
+import { ServerError } from '../../domain/exceptions/exceptions'
+import { HttpResponse } from '../interfaces/http/iHttp'
 
 export const badRequest = (error: Error): HttpResponse => ({
   statusCode: 400,
@@ -8,4 +9,9 @@ export const badRequest = (error: Error): HttpResponse => ({
 export const success = (body?: any): HttpResponse => ({
   statusCode: 200,
   body: body
+})
+
+export const serverError = (): HttpResponse => ({
+  statusCode: 500,
+  body: new ServerError()
 })
