@@ -13,8 +13,8 @@ export class InvalidParamError extends Error {
 };
 
 export class ServerError extends Error {
-  constructor(){
-    super('Internal Server error')
+  constructor(error?: Error){
+    super((error !== undefined ? error.message : 'Internal Server error'))
     this.name = 'ServerError'
   }
 };
